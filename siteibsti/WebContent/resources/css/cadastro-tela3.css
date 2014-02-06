@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+
+
+/*-------Cadastro Tela 3------------*/
+#cadastro_tela3 {
+	width: 1032px;
+	height: 670px;
+	background: #2B78E4;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#cadastro_tela3 .botao {
+	float: right;
+	background: #333;
+	clear: none;
+	display: inline;
+}
+
+#form-cad3-transporte {
+	width: 490px;
+	height: 120px;
+	padding: 20px;
+}
+
+#form-cad3-interesses {
+	width: 700px;
+	height: 225px;
+	padding: 20px;
+}
+
+#form-cad3-interesses textarea {
+	width: 600px;
+	height: 150px;
+	margin: 20px;
+}
+
+#form-cad3-curriculo {
+	width: 700px;
+	height: 120px;
+	padding: 20px;
+}
+
+#form-cad3-curriculo span {
+	display: block;
+	margin-bottom: 20px;
+}

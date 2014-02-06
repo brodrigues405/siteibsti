@@ -1,0 +1,53 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="conteudo-dinamico">
+		<div id="acesso">
+			<div id="acesso-login">
+				<h2>Login</h2>
+				<h:form id="form-login">
+					<h:panelGrid columns="2">
+						<h:outputLabel for="login" value="login: " />
+						<h:inputText id="login" required="true"
+							requiredMessage=" O Campo Login e Obrigatorio" />
+						<h:outputLabel for="senha" value="Senha: " />
+						<h:inputSecret id="senha" required="true"
+							requiredMessage=" A Senha e Obrigatoria" />
+
+						<h:commandButton value="Entrar" class="botao"/>
+						<h:commandButton value="Recupera Senha"  class="botao"/>
+					</h:panelGrid>
+				</h:form>
+			</div>
+			<!--  Fim da Div Login -->
+
+			<div id="acesso-divisor">.</div>
+			<!-- Fim Da Div Divisor -->
+
+			<div id="acesso-cadastro">
+				<h2>Cadastro</h2>
+				<h:form id="form-cadastro">
+					<h:panelGrid columns="2">
+						<h:outputLabel for="nome" value="Nome: " />
+						<h:inputText id="nome" required="true"
+							requiredMessage=" O Campo Nome e Obrigatorio" />
+						<h:outputLabel for="email" value="Email: " />
+						<h:inputText id="email" required="true"
+							requiredMessage=" O Campo Email e Obrigatorio" />
+						<h:outputLabel for="senha" value="Senha: " />
+						<h:inputSecret id="senha" required="true"
+							requiredMessage=" A Senha e Obrigatoria" />
+
+						<h:commandButton value="Cadastrar" class="botao" />
+					</h:panelGrid>
+				</h:form>
+
+			</div>
+			<!--  Fim da Div Cadastro -->
+		</div>
+		<!-- Fim da Dive Acesso -->
+	</ui:define>
+</ui:composition>

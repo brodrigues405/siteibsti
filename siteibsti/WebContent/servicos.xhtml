@@ -1,0 +1,84 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<title>IBSTI | Serviços</title>
+		<h:outputStylesheet name="servicos.css" library="css" />
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+
+		<div class="tol">
+			<span class="balao"></span>
+			<div id="balao">Serviços</div>
+		</div>
+		
+		<div id="servicos">
+
+			<h1 class="titulo1-servicos">Serviços</h1>
+
+			<p class="texto-servicos">A sociedade moderna, cada vez mais,
+				necessita de soluções e serviços de tecnologia. A necessidade de
+				manter-se conectado à Internet para a realização de atividades
+				profissionais e pessoais cresce a passos largos. E esse crescimento
+				se dá, principalmente, pelo uso de soluções móveis, que se
+				destacou tanto em países desenvolvidos como nos emergentes.</p>
+
+			<p class="texto-servicos">
+				Estudos do instituto de <a
+					href="http://computerworld.uol.com.br/especiais/2012/07/09/gartner-aumenta-para-3-gastos-com-ti-em-2012/"
+					title="pesquisa da gartner"> pesquisas Gartner</a> apontam que os
+				gastos em TI neste ano devem aumentar em 4,2% comparado a 2012, algo
+				em torno de US$ 2,7 trilhões.
+			</p>
+
+			<p class="texto-servicos">Até 2015, o mesmo Instituto Gartner
+				projeta que o mercado brasileiro de Tecnologia da Informação
+				experimentará taxas de crescimento em torno de 9,9% ao ano.
+				Impulsionado por essa demanda, todo o Continente Latino-americano
+				fará vultosos investimentos, sendo que o Brasil responderá por
+				mais de 40% dos negócios nessa área.</p>
+
+			<p class="texto-servicos">À reboque desse consumo de tecnologia,
+				haverá o aparecimento de várias empresas do setor, que deverão
+				produzir produtos e serviços para atender a demanda do mercado
+				interno.</p>
+			<br />
+
+
+			<h2 class="titulo2-servicos">Soluções em Tecnologia da
+				Informação</h2>
+
+			<div class="bloco-conteudo-servicos">
+
+				<p class="texto-servicos">Utilizando os mais modernos recursos
+					da tecnologia e assistido por equipes altamente qualificadas,
+					podemos oferecer aos nossos clientes soluções em T.I, tais como:</p>
+
+				<ul class="lista-servicos">
+					<li>Desenvolvimento de Sistemas</li>
+					<li>Projetos em segurança</li>
+					<li>Gerenciamento de projetos</li>
+					<li>Infraestrutura de redes</li>
+					<li>Computação em nuvem</li>
+				</ul>
+
+				<ul class="lista-servicos">
+					<li>Integração de Sistemas</li>
+					<li>Soluções em Banco de Dados</li>
+					<li>Análise de negócios</li>
+					<li>Configuração de servidores</li>
+					<li>Sistemas móveis (mobile)</li>
+				</ul>
+
+			</div>
+			<!-- fim da div bloco-conteudo-servicos -->
+
+		</div>
+		<!-- Fim da div servicos -->
+
+	</ui:define>
+</ui:composition>

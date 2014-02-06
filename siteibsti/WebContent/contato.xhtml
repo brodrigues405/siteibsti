@@ -1,0 +1,60 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="cabecalho">
+		<title>IBSTI | Contato</title>
+		<h:outputStylesheet name="contato.css" library="css" />
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+
+		<div class="tol">
+			<span class="balao"></span>
+			<div id="balao">Contato</div>
+		</div>
+
+		<div id="contato">
+
+			<h:form id="form-contato">
+
+				<p:growl autoUpdate="true" />
+
+				<h:outputLabel for="nome" value="Nome: " />
+				<p:inputText id="nome" required="true"
+					requiredMessage=" O Campo Nome e Obrigatorio"
+					value="#{contatoBean.nome}" />
+
+				<h:outputLabel for="email" value="E-mail: " />
+				<p:inputText id="email" required="true"
+					requiredMessage=" O Campo Email e Obrigatorio"
+					value="#{contatoBean.email}" />
+
+				<h:outputLabel for="encaminhar" value="Encaminhar Para" />
+				<h:selectOneMenu id="encaminhar" value="#{contatoBean.setor}">
+					<f:selectItem itemLabel="Administrativo" itemValue="1" />
+					<f:selectItem itemLabel="Diretoria" itemValue="3" />
+				</h:selectOneMenu>
+
+				<h:outputLabel for="messagem" value="Mensagem:" />
+				<p:inputTextarea id="mensagem" value="#{contatoBean.mensagem}" />
+
+				<h:commandButton value="Enviar" class="botao"
+					action="#{contatoBean.enviarMensagem}" />
+				<h:commandButton value="Limpar" class="botao" />
+				<h:commandButton value="Cancelar"/>
+			</h:form>
+
+			<div id="mapa">
+				<span>Mapa de Localizacao</span>
+				<iframe width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?q=ibsti&amp;oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;hq=ibsti&amp;hnear=Bras%C3%ADlia+-+Distrito+Federal&amp;t=m&amp;cid=4884157615799941682&amp;ll=-15.754258,-48.048363&amp;spn=0.165213,0.171318&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.br/maps?q=ibsti&amp;oe=utf-8&amp;client=firefox-a&amp;ie=UTF8&amp;hq=ibsti&amp;hnear=Bras%C3%ADlia+-+Distrito+Federal&amp;t=m&amp;cid=4884157615799941682&amp;ll=-15.754258,-48.048363&amp;spn=0.165213,0.171318&amp;z=12&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa maior</a></small>
+			</div>
+		</div>
+		<!-- Fim da Div Contato -->
+
+	</ui:define>
+
+</ui:composition>

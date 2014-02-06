@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.0" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+ <navigation-rule>
+  <from-view-id>/*</from-view-id>
+  <navigation-case>
+   <from-outcome>homepage</from-outcome>
+   <to-view-id>/index.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>servicos</from-outcome>
+   <to-view-id>/servicos.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>projetos</from-outcome>
+   <to-view-id>/projetos.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>treinamento</from-outcome>
+   <to-view-id>/treinamento.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>institucional</from-outcome>
+   <to-view-id>/institucional.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>parceiros</from-outcome>
+   <to-view-id>/parceiros.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>contato</from-outcome>
+   <to-view-id>/contato.xhtml</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>participe</from-outcome>
+   <to-view-id>/participe.xhtml</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+</faces-config>

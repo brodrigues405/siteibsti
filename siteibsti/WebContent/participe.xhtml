@@ -1,0 +1,90 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<title>Participe | IBSTI</title>
+		<h:outputStylesheet library="css" name="participe.css" />
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+		<div class="tol">
+
+			<span class="balao"></span>
+			<div id="balao">Participe</div>
+
+			<h:graphicImage name="BannerTemporaario.png"
+				library="imagens/participe" alt="BannerTemporario" id="Banner" styleClass="bannerTemp"/>
+
+		</div>
+		<div class="participe">
+		
+		
+		
+<!-- Ocultado
+			<h:graphicImage name="participe/projetos2.png" library="imagens"
+				id="icon_projetos" styleClass="participe-icones" />
+			<h:graphicImage name="participe/voluntarios2.png" library="imagens"
+				id="icon_voluntarios" styleClass="participe-icones" />
+			<h:graphicImage name="participe/treinamentos2.png" library="imagens"
+				id="icon_treinamentos" styleClass="participe-icones" />
+			<h:graphicImage name="participe/colaboradores2.png" library="imagens"
+				id="icon_colaboradores" styleClass="participe-icones" />
+
+			<div class="caixa1">
+			<span class="seta_projetos"></span>
+			<div id="projetos">Se interessou por algum projeto?</div>
+			</div>
+			
+			<div class="caixa2">
+			<span class="seta_voluntarios"></span>
+			<div id="voluntarios">Voluntarios</div>
+			</div>
+			
+			<div class="caixa3">
+			<span class="seta_treinamentos"></span>
+			<div id="treinamentos">Treinamento</div>
+			</div>
+			
+			<div class="caixa4">
+			<span class="seta_colaboradores"></span>
+			<div id="colaboradores">Colaboradores</div>
+			</div>
+			
+
+			 <script type="text/javascript">
+            $(document).ready(function() {
+                $(".participe-icones").click(function() {
+                	if ($(this).is("#icon_projetos")) {
+                		$(".caixa1").css("display", "block"); 
+                		$(".caixa2").css("display", "none"); 
+                		$(".caixa3").css("display", "none"); 
+                		$(".caixa4").css("display", "none");  
+                   }
+                	if ($(this).is("#icon_voluntarios")) {
+                		$(".caixa1").css("display", "none"); 
+                		$(".caixa2").css("display", "block"); 
+                		$(".caixa3").css("display", "none"); 
+                		$(".caixa4").css("display", "none");                   
+                    }  
+                	if ($(this).is("#icon_treinamentos")) {
+                		$(".caixa1").css("display", "none"); 
+                		$(".caixa2").css("display", "none"); 
+                		$(".caixa3").css("display", "block"); 
+                		$(".caixa4").css("display", "none");                   
+                    } 
+                	if ($(this).is("#icon_colaboradores")) {
+                		$(".caixa1").css("display", "none"); 
+                		$(".caixa2").css("display", "none"); 
+                		$(".caixa3").css("display", "none"); 
+                		$(".caixa4").css("display", "block");               
+                    } 
+                });
+            });
+        </script>
+ -->
+		</div>
+	</ui:define>
+</ui:composition>

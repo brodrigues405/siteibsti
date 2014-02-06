@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.participe {
+	color: #fff;
+}
+.participe-icones{
+	margin: 30px 0 0 65px;
+	cursor: pointer;
+}
+.participe-icones:hover{
+	opacity: 0.8;
+}
+.participe-icones:first-child{
+	margin-left: 200px;
+}
+.participe span{
+    width:0;
+    height:0;
+    border:25px solid transparent;
+    display:block;
+}
+span.seta_projetos{ 
+    margin-left: 235px;
+    border-bottom-color:#3498db; 
+}
+#projetos{
+	width: 1000px;
+	height: 300px;
+	margin:0 auto 60px auto;
+	padding: 16px;
+	border-radius: 10px;
+	background: #3498db;
+}
+span.seta_voluntarios{ 
+    margin-left: 415px;
+    border-bottom-color:#2ecc71; 
+}
+#voluntarios{
+	width: 1000px;
+	height: 300px;
+	margin:0 auto 60px auto;
+	padding: 16px;
+	border-radius: 10px;
+	background: #2ecc71;
+}
+span.seta_treinamentos{ 
+    margin-left: 590px;
+    border-bottom-color:#9b59b6; 
+}
+#treinamentos{
+	width: 1000px;
+	height: 300px;
+	margin:0 auto 60px auto;
+	padding: 16px;
+	border-radius: 10px;
+	background: #9b59b6;
+}
+span.seta_colaboradores{ 
+    margin-left: 767px;
+    border-bottom-color:#f39c12; 
+}
+#colaboradores{
+	width: 1000px;
+	height: 300px;
+	margin:0 auto 60px auto;
+	padding: 16px;
+	border-radius: 10px;
+	background: #f39c12;
+}
+.tol span.balao{
+	margin-left: 940px;
+    border-bottom-color:#ccc; 
+}
+.caixa2{
+	display: none;
+}
+.caixa3{
+	display: none;
+}
+.caixa4{
+	display: none;
+}
+.bannerTemp{
+	margin: 0 auto 12px 120px;
+}

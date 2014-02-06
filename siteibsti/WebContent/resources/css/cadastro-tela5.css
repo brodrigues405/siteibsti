@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+/*-------Cadastro Tela 5------------*/
+#cadastro_tela5 {
+	width: 1032px;
+	height: 530px;
+	background: #2B78E4;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#cadastro_tela5 .botao {
+	float: right;
+	background: #333;
+	clear: none;
+	display: inline;
+}
+
+#form-cad5-termo {
+	width: 980px;
+	height: 400px;
+	padding: 10px;
+}
+
+#form-cad5-termo #box {
+	display: block;
+	width: 800px;
+	height: 300px;
+	overflow: auto;
+	margin: 30px auto;
+}

@@ -1,0 +1,104 @@
+﻿<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<title>IBSTI | Parceiros</title>
+		<h:outputStylesheet library="css" name="parceiros.css" />
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+
+		<div class="tol">
+			<span class="balao"></span>
+			<div id="balao">Parceiros</div>
+		</div>
+
+		<div id="bloco-parceiros">
+			<div class="bloco-conteudo-parceiros">
+
+				<h:graphicImage name="o_que_e.png" library="imagens"
+					styleClass="img-lado-titulo1" />
+
+				<h1 class="titulo-parceiro1">O que é um parceiro?</h1>
+
+				<p class="texto-block-conteudo-parceiros">Parceiro é uma
+					entidade ou pessoa que, voluntariamente, decide apoiar as
+					atividades da IBSTI, financeira ou intelectualmente.</p>
+
+				<p class="texto-block-conteudo-parceiros">Nesta primeira
+					modalidade, o parceiro contribui com suas ideias e/ou sua
+					capacidade laboral, participando e apoiando os treinamentos
+					disponibilizados pela empresa IBSTI, o qual recebe o nome de
+					VOLUNTÁRIO.</p>
+
+				<p class="texto-block-conteudo-parceiros">Naquela outra
+					modalidade, o parceiro pode ajudar financeira ou materialmente os
+					projetos em desenvolvimento, o qual recebe o nome de COLABORADOR.</p>
+
+			</div>
+			<!-- Fim da div bloco-conteudo -->
+
+			<a href="#1"><h:graphicImage name="botao-voluntario-1.jpg" library="imagens"
+				styleClass="quadrado-voluntario" /></a>
+			<a href="#2"><h:graphicImage name="botao-colaborador-1.jpg" library="imagens"
+				styleClass="quadrado-colaborador" /></a>
+		</div>
+		<!-- Fim da div Parceiros -->
+
+		<div id="bloco-voluntario">
+			<div class="bloco-conteudo-voluntario" id="1">
+
+				<h:graphicImage name="voluntario_parceiro.png" library="imagens"
+					styleClass="img-lado-titulo1" />
+
+				<h1 class="titulo-voluntario1">O que é um Voluntário?</h1>
+
+				<p class="texto-block-conteudo-voluntario">O voluntário é
+					qualquer pessoa que, movido por espírito altruísta e porque
+					acredita na educação como sendo a mola mestra para mudanças
+					profundas e como um dos fatores para a inclusão das pessoas no
+					mercado de trabalho, decide doar parte de seu tempo para participar
+					como monitor, consultor ou instrutor nos diversos cursos e projetos
+					oferecidos gratuitamente aos alunos da empresa IBSTI.</p>
+
+				<p class="texto-block-conteudo-voluntario">Não é o mesmo
+					voluntário previsto na Lei do voluntariado (Lei 9.068/98), uma vez
+					que a empresa IBSTI não é uma entidade sem fins lucrativos, uma vez
+					que, em uma segunda etapa de seus trabalhos, planeja-se a
+					consecução de projetos remunerados, por meio dos quais poder-se-á
+					contratar os alunos e voluntários que participam dos treinamentos,
+					originando a tão almejada inclusão no mercado de trabalho dos
+					mesmos.</p>
+
+
+			</div>
+			<!-- Fim da div bloco-conteudo -->
+		</div>
+		<!-- Fim da div bloco-voluntario -->
+
+		<div id="bloco-colaborador">
+			<div class="bloco-conteudo-colaborador" id="2">
+
+				<h:graphicImage name="colaborador_parceiro.png" library="imagens"
+					styleClass="img-lado-titulo1" />
+
+				<h1 class="titulo-parceiro1">O que é um Colaborador?</h1>
+
+				<p class="texto-block-conteudo-colaborador">Trata-se de empresas
+					que, após conhecer o caráter motivador do trabalho da IBSTI,
+					decidam apoiar o projeto com doações em espécie, material (físico e
+					lógico) ou com consultoria. Podem ser, também, empresas
+					aceleradoras que se interessem e vejam potencial de mercado em
+					algum dos projetos desenvolvidos ou em desenvolvimento pela empresa
+					IBSTI.</p>
+
+
+			</div>
+			<!-- Fim da div bloco-conteudo -->
+		</div>
+		<!-- Fim da div bloco-colaborador -->
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,64 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<title>Pagina Inicial | IBSTI</title>
+		<h:outputStylesheet library="css" name="pagina-inicial.css"/>
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+		
+		<!-- JS utilizado pelo facebook -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- Fim do js utilizado pelo facebook -->
+		
+		<div class="tooltip"></div>
+
+		<h:graphicImage name="banner01.jpg" library="imagens" alt="banner"
+			title="Banner" />
+
+		<div id="home">
+			<div id="servicos">
+				<span>Serviços</span>
+				<div id="conteiner">
+					<h:graphicImage name="chamada-servicos1.png" library="imagens" 
+					alt="chamada servicos" id="chamada-servicos-home" />
+					
+					<h:link outcome="servicos">					
+						<h:graphicImage name="botao-chamada-servicos1.png" library="imagens" 
+						alt="botao imagens" styleClass="botao-chamada-servico" id="botao-chamada-voluntario-home"/>
+					</h:link>
+				</div> <!-- Fim do conteiner de servicos -->
+			</div>
+			<div id="voluntariado">
+				<span>Voluntariado</span>
+				<div id="conteiner">					
+					<h:graphicImage name="chamada-voluntario1.png" library="imagens" 
+					alt="chamada voluntario" id="chamada-voluntario-home"/>
+					
+					<h:link outcome="parceiros">
+					<h:graphicImage name="botao-chamada-voluntario.png" library="imagens" 
+					alt="botao imagens" styleClass="botao-chamada-voluntario" id="botao-chamada-voluntario-home"/>
+					</h:link>
+				</div>
+			</div>
+			<div id="noticias">
+				<span>Últimas Noticias</span>
+				<div id="conteiner">				
+					<div class="fb-like-box" data-href="https://www.facebook.com/ibsti" data-width="430" data-height="370" data-show-faces="false" data-stream="true" data-show-border="false" data-header="false"></div>				
+				</div>
+			</div>
+		</div>
+		<!-- Fim da div Home -->
+	</ui:define>
+</ui:composition>

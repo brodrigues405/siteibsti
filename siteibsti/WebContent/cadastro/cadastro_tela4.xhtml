@@ -1,0 +1,50 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="conteudo-dinamico">
+		<div id="cadastro_tela4" class="formulario">
+
+			<h:form id="form-cad4" enctype="multipart/form-data">
+				<div id="form-cad4-foto">
+					<h2>Foto</h2>
+					<span>Escolha uma imagen nos formatos: .jpg .jpeg .png</span>
+					<div id="foto"></div>
+
+
+					<input type="file" id="curriculo" name="curriculo" />
+
+				</div>
+				<!-- Fim da Div Foto -->
+
+				<div id="form-cad4-login">
+					<h2>Informacao Login</h2>
+
+					<h:outputLabel for="nome" value="Nome Do Usuario *" />
+					<h:inputText id="nome" required="true"
+						requiredMessage=" O Campo Nome e Obrigatorio" />
+
+					<h:outputLabel for="senha1" value="Senha *" />
+					<h:inputSecret id="senha1" required="true"
+						requiredMessage=" A Senha e Obrigatoria" />
+
+					<h:outputLabel for="senha2" value="Confirmar Senha *" />
+					<h:inputSecret id="senha2" required="true"
+						requiredMessage=" A Senha e Obrigatoria" />
+
+				</div>
+				<!-- Fim da Div Login -->
+
+				<h:commandButton value="Proxima Etapa >>" class="botao botaocad" />
+
+				<h:commandButton value="Cancelar" class="botao botaocad" />
+
+				<h:commandButton value="Anterior" class="botao botaocad" />
+
+			</h:form>
+		</div>
+		<!-- Fim da Div Cadastro Tela4 -->
+	</ui:define>
+</ui:composition>

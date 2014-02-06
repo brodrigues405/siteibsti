@@ -1,0 +1,224 @@
+/*------------------------Reseta as margens para 0 e 0------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------------ Configuracoes das Paginas -------------------------*/
+body {
+	font-family: Arial, sans-serif;
+}
+
+img {
+	border: none;
+}
+
+/*---------------------------------- TOPO ------------------------------------*/
+#template-topo {
+	width: 1032px;
+	margin: 0 auto;
+}
+
+#template-logo {
+	width: 550px;
+	margin-top: 4px;
+	display: inline-table;
+}
+
+#template-logo span {
+	color: #9EB6C1;
+	font-weight: bold;
+	display: block;
+	margin-left: 80px;
+}
+
+#template-logado {
+	width: 375px;
+	height: 50px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	display: inline-table;
+	margin-top: 10px;
+	margin-right: 30px;
+	float: right;
+	padding: 4px;
+}
+
+.template-item-menu {
+	margin-left: 4px;
+}
+
+.template-item-menu:HOVER, .item1-menu:HOVER {
+	opacity: 0.80;
+}
+
+/*----------------------------- Conteudo ---------------------------------*/
+#template-conteudo {
+	width: 1032px;
+	margin: 0 auto;
+}
+
+/*------Acesso-------*/
+#acesso {
+	width: 932px;
+	margin: 0 auto;
+	display: block;
+}
+
+#acesso h2 {
+	text-align: center;
+	line-height: 40px;
+}
+
+#acesso-login {
+	display: inline-block;
+	width: 430px;
+	height: 330px;
+}
+
+#acesso-divisor {
+	display: inline-table;
+	width: 2px;
+	height: 220px;
+	background: black;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+}
+
+#acesso-cadastro {
+	display: inline-block;
+	width: 430px;
+	height: 330px;
+}
+
+#acesso-login form,#acesso-cadastro form {
+	background: #ccc;
+	width: 390px;
+	height: 200px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+#acesso label {
+	color: #333;
+	font-weight: bold;
+	font-size: 17px;
+	width: 100px;
+	margin: 5px;
+}
+
+/*-------------------------------Rodape-----------------------------------*/
+#template-rodape {
+	width: 1032px;
+	height: 230px;
+	background: #2683C0;
+	margin: 0 auto;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#template-rodape .template-rodape-colunas {
+	display: inline-table;
+	width: 300px;
+	margin-left: 30px;
+	margin-top: 30px;
+	height: 150px;
+	border-top: 5px solid #fff;
+	color: #fff;
+	padding-top: 10px;
+}
+
+#template-rodape .template-rodape-colunas>ul {
+	list-style: none;
+}
+
+#template-rodape .template-rodape-colunas ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#template-rodape .template-rodape-colunas h3 {
+	padding-bottom: 10px;
+}
+
+#template-rodape .template-rodape-colunas>ul {
+	margin-left: 15px;
+}
+
+#template-rodape img {
+	margin-right: 7px;
+}
+
+/* Elementos */
+.icone-facebook {
+	background-image: url("#{resource['imagens:face-1.png']}");
+	float:left;
+	
+	width: 41px;
+	height: 44px;
+}
+
+.icone-facebook:HOVER {
+	background-image: url("#{resource['imagens:face-2.png']}");
+}
+
+.icone-email {
+	background-image: url("#{resource['imagens:email-1.png']}");
+	float:left;
+	width: 41px;
+	height: 44px;
+}
+
+.icone-email:HOVER {
+	background-image: url("#{resource['imagens:email-2.png']}");
+}
+
+.icone-google {
+	background-image: url("#{resource['imagens:google-1.png']}");
+	float:left;
+	width: 41px;
+	height: 44px;
+}
+
+.icone-google:HOVER {
+	background-image: url("#{resource['imagens:google-2.png']}");
+}
+
+.icone-twitter {
+	background-image: url("#{resource['imagens:twitter-1.png']}");
+	float:left;
+	width: 41px;
+	height: 44px;
+}
+
+.icone-twitter:HOVER {
+	background-image: url("#{resource['imagens:twitter-2.png']}");
+}
+
+.icone-youtube {
+	background-image: url("#{resource['imagens:youtube-1.png']}");
+	float:left;
+	width: 41px;
+	height: 44px;
+}
+
+.icone-youtube:HOVER {
+	background-image: url("#{resource['imagens:youtube-2.png']}");
+}
+.tol span{
+    width:0;
+    height:0;
+    border:20px solid transparent;
+    display:block;
+}
+.tol #balao{
+	width: 992px;
+	height: 10px;
+	line-height:10px;
+	background: #ccc;
+	border-radius: 10px;
+	padding:20px;
+	color: #000;
+	margin-bottom: 15px;
+}

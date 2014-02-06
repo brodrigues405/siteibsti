@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+/*--------------------------------Formulario------------------------------*/
+.formulario {
+	color: #fff;
+}
+
+.formulario h2 {
+	border-bottom: 3px solid #fff;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.formulario label {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 5px;
+	float: left;
+	clear: both;
+}
+
+.formulario input {
+	padding: 5px;
+	margin-bottom: 4px;
+	float: left;
+	clear: both;
+	border: none;
+	border-radius: 6px;
+}
+
+.formulario select {
+	padding: 5px;
+	margin-bottom: 4px;
+	float: left;
+	clear: both;
+	border: none;
+}
+
+.formulario .grande {
+	width: 400px;
+}
+
+.formulario .medio {
+	width: 250px;
+}
+
+.formulario .label2 {
+	display: inline;
+	clear: none;
+	width: 200px;
+	margin-right: 5px;
+}
+
+.formulario .input2 {
+	display: inline;
+	clear: none;
+	width: 150px;
+	margin-right: 50px;
+}
+
+.formulario .label3 {
+	display: inline;
+	clear: none;
+	width: 140px;
+	margin-right: 5px;
+}
+
+.formulario .input3 {
+	display: inline;
+	clear: none;
+	width: 130px;
+	margin-right: 25px;
+}
+
+.botao {
+	border: none;
+	margin: 10px;
+	background: #06C;
+	color: #fff;
+	cursor: pointer;
+	padding: 7px;
+	min-width: 80px;
+	max-width: 150px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.botao:HOVER {
+	background: blue;
+}

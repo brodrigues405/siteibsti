@@ -1,0 +1,95 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="conteudo-dinamico">
+		<div id="cadastro_tela2" class="formulario">
+
+			<h:form id="form-cad2">
+				<div id="form-cad2-formacao">
+					<h2>Formacao</h2>
+
+					<h:outputLabel for="escolaridade" value="Escolaridade *" />
+
+					<h:selectOneMenu id="escolaridade">
+						<f:selectItem itemLabel="Seleciona a Escolaridade" itemValue="1" />
+						<f:selectItem itemLabel="Superio" itemValue="2" />
+						<f:selectItem itemLabel="Ensino Medio" itemValue="3" />
+					</h:selectOneMenu>
+
+					<h:outputLabel for="curso" value="Curso *" />
+					<h:inputText id="curso" class="medio" />
+
+				</div>
+				<!-- Fim da Div Formacao -->
+
+				<div id="form-cad2-conhecimento">
+					<h2>Conhecimento</h2>
+					<p>Nessa etapa voce devera marcar uma ou mais areas de
+						conhecimento</p>
+
+
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxgrande">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxgrande">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					<div class="boxpequeno">
+
+						<h:outputLabel for="banco" value="Banco de Dados " />
+						
+						
+					</div>
+					</div>
+				<!-- Fim da Div Conhecimentos -->
+
+				<h:commandButton value="Proxima Etapa >>" class="botao botaocad" />
+				
+				<h:commandButton value="Cancelar" class="botao botaocad" />
+				
+				<h:commandButton value="Anterior" class="botao botaocad" />
+				
+			</h:form>
+		</div>
+		<!-- Fim da Div Cadastro Tela2 -->
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+/*-------Cadastro Tela 2------------*/
+#cadastro_tela2 {
+	width: 1032px;
+	height: 700px;
+	background: #2B78E4;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#cadastro_tela2 .botao {
+	float: right;
+	background: #333;
+	clear: none;
+	display: inline;
+}
+
+#form-cad2-formacao {
+	width: 490px;
+	height: 150px;
+	padding: 20px;
+}
+
+#form-cad2-conhecimento {
+	width: 950px;
+	height: 400px;
+	padding: 20px;
+}
+
+#form-cad2-conhecimento .boxpequeno {
+	width: 170px;
+	height: 150px;
+	border-radius: 6px;
+	background: #fff;
+	float: left;
+	margin: 10px;
+}
+
+#form-cad2-conhecimento .boxgrande {
+	width: 350px;
+	height: 150px;
+	border-radius: 6px;
+	background: #fff;
+	float: left;
+	margin: 10px;
+}

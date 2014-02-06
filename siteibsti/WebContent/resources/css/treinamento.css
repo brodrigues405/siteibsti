@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+/* .cobaia {
+	background-color: #7a02a2;
+	width: 25px;
+	height:25px;
+} */
+
+.treinamentos {
+	margin: 0 0 5px 0;
+}
+
+.titulo-treino-dev, .titulo-treino-analise, .titulo-treino-validacao {
+	width: 321px;
+	height: 39px;
+}
+
+.texto-titulo {
+	display: block;
+	font: calibre;
+	font-size: 22px;
+	color: black;
+	text-align: justify;
+	line-height: 39px;
+	margin-left: 10px;
+}
+.texto-curso{
+	font: calibre;
+	font-size: 18px;
+	color: black;
+	text-align: justify;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.conteudo-topicos li{
+	list-style: none;
+	margin: 0 0 0 10px;
+	font: calibri;
+	font: 18px;
+}
+
+.titulo-treino-dev {
+	background: url("#{resource['imagens:treinamento/topo_desenvolvimento.png']}");
+}
+
+.titulo-treino-analise {
+	background: url("#{resource['imagens:treinamento/topo_analise.png']}");
+}
+
+.titulo-treino-validacao {
+	background: url("#{resource['imagens:treinamento/topo_validacao.png']}");
+}
+
+.fundo-treinamento {
+	background: url("#{resource['imagens:treinamento/fundo.png']}");
+	width: 321px;
+	height: 92px;
+}
+
+.div-treinamento-dev1 {
+	background: url("#{resource['imagens:treinamento/desenvolvimento3.png']}");
+	width: 1032px;
+	height: 47px;
+}
+
+.div-analise-ana1 {
+	background: url("#{resource['imagens:treinamento/analise3.png']}");
+	width: 1032px;
+	height: 47px;
+}
+.div-validacao-val1{
+	background: url("#{resource['imagens:treinamento/validacao3.png']}");
+	width: 1032px;
+	height: 47px;
+}
+
+.esconder-dev1, .esconder-ana1, .esconder-val1 {	
+	margin: 5px 0 0 0;
+	display: block;
+}
+
+/* .seta, .seta1, .seta2{
+	float: right;
+	margin: 12px 14px 0 0;
+	transform: rotate(90deg);
+} */
+.tol span.balao{
+	margin-left: 350px;
+    border-bottom-color:#ccc; 
+}

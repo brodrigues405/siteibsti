@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+/*------Contato-------*/
+#contato {
+	background: #eceff1;
+	color: #2B78E4;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#contato #mapa {
+	display: inline-table;
+	width: 500px;
+	margin-top: 10px;
+}
+
+#contato span {
+	line-height: 40px;
+}
+
+#contato #form-contato {
+	width: 450px;
+	height: 380px;
+	display: inline-table;
+	margin: 22px;
+}
+
+#contato label {
+	display: block;
+	line-height: 30px;
+}
+
+#contato input {
+	width: 390px;
+	height: 15px;
+	padding: 5px;
+}
+
+#contato textarea {
+	width: 390px;
+	height: 140px;
+	padding: 5px;
+}
+
+#contato input[type=submit] {
+	width: 60px;
+	height: 30px;
+	float: left;
+}
+.tol span.balao{
+	margin-left: 795px;
+    border-bottom-color:#ccc; 
+}

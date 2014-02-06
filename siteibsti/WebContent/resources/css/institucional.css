@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+#institucional {
+	background-image: url("#{resource['imagens:background-institucional.jpg']}");	
+	background-repeat: no-repeat;
+	margin-bottom: -15px;
+	padding:40px;
+	
+	font-family: arial;
+	color: #34495e;
+	text-align: justify;
+}
+
+.texto-institucional {
+	margin: 5px 0 5px 0;
+}
+
+.titulo-institucional {
+	font-weight: bold;
+	margin: 5px 0 5px 0;
+}
+
+.topicos-institucional {
+	margin-left: 20px; 
+}
+
+.topicos-institucional li {
+	font-weight: bolder;
+}
+.tol span.balao{
+	margin-left: 495px;
+    border-bottom-color:#ccc; 
+}

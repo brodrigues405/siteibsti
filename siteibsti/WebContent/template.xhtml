@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<h:outputStylesheet name="estilo.css" library="css" />
+	<h:outputScript library="primefaces" name="jquery/jquery.js"
+		target="head" />
+	<ui:insert name="cabecalho" />
+</h:head>
+
+<h:body>
+	<div id="template-topo">
+		<div id="template-logado" style="display: none;">
+			<h2>Painel</h2>
+			<span>Login</span> <span>Senha</span>
+		</div>
+		<!-- Fim da div logado -->
+
+		<div id="template-logo">
+			<h:link outcome="homepage">
+				<h:graphicImage name="logo.png" library="imagens" alt="logo"
+					title="Logo" />
+			</h:link>
+			<span>Imaginar e Construir Soluções em Tecnologia da
+				Informação</span>
+		</div>
+		<!-- Fim da div logo -->
+
+		<div id="template-menu">
+			<h:link outcome="servicos">
+				<h:graphicImage name="01.png" library="imagens" alt="Servicos"
+					title="Serviços" styleClass="item1-menu" />
+			</h:link>
+
+			<h:link outcome="projetos">
+				<h:graphicImage name="02.png" library="imagens" alt="Projetos"
+					title="Projetos" styleClass="template-item-menu" />
+			</h:link>
+
+			<h:link outcome="treinamento">
+				<h:graphicImage name="03.png" library="imagens" alt="Treinanto"
+					title="Treinamento" styleClass="template-item-menu" />
+			</h:link>
+
+			<h:link outcome="institucional">
+				<h:graphicImage name="04.png" library="imagens" alt="Institucional"
+					title="Institucional" styleClass="template-item-menu" />
+			</h:link>
+
+			<h:link outcome="parceiros">
+				<h:graphicImage name="05.png" library="imagens" alt="Parceiros"
+					title="Parceiros" styleClass="template-item-menu" />
+			</h:link>
+
+			<h:link outcome="contato">
+				<h:graphicImage name="06.png" library="imagens" alt="Contato"
+					title="Contato" styleClass="template-item-menu" />
+			</h:link>
+
+			<h:link outcome="participe">
+				<h:graphicImage name="07.png" library="imagens" alt="Participe"
+					title="Participe" styleClass="template-item-menu" />
+			</h:link>
+		</div>
+		<!-- Fim da div menu -->
+	</div>
+	<!-- Fim da div topo -->
+
+	<div id="template-conteudo">
+		<ui:insert name="conteudo-dinamico" />
+	</div>
+	<!-- Fim da div Conteudo -->
+
+	<div id="template-rodape">
+		<div class="template-rodape-colunas">
+			<h3>Contato</h3>
+			<ul>
+				<li>Telefone: (61) 3024-0975</li>
+				<li>Email: <a href="mailto:contato@ibsti.com.br">contato@ibsti.com.br</a></li>
+				<li>Skype: <a href="skype:ibsti.comercial?call">ibsti.comercial</a></li>
+				<li>Endereço: QND 29 Lote 20 Sala 102</li>
+				<li><h:link outcome="contato">Entre em contato</h:link></li>
+			</ul>
+		</div>
+		<!-- Fim de contato -->
+
+		<div class="template-rodape-colunas">
+			<h3>Redes Sociais</h3>
+			<a href="https://www.facebook.com/ibsti"><div
+					class="icone-facebook"></div></a> <a href="mailto:contato@ibsti.com.br"><div
+					class="icone-email"></div></a> <a href="https://www.twitter.com/ibsti"><div
+					class="icone-twitter"></div></a> <a
+				href="https://plus.google.com/u/0/b/115494701482910047066/115494701482910047066/about/p/pub"><div
+					class="icone-google"></div></a> <a
+				href="https://www.youtube.com/channel/UCm-yI7yFGHKHCMG35aNDVPw/feed"><div
+					class="icone-youtube"></div></a>
+		</div>
+		<!-- Fim de redes sociais -->
+
+		<div class="template-rodape-colunas">
+			<h3>Links</h3>
+			<ul>
+				<li><h:link outcome="servicos">Serviços</h:link></li>
+				<li><h:link outcome="projetos">Projetos</h:link></li>
+				<li><h:link outcome="treinamento">Treinamento</h:link></li>
+				<li><h:link outcome="institucional">Institucional</h:link></li>
+				<li><h:link outcome="parceiros">Parceiros</h:link></li>
+				<li><h:link outcome="contato">Contato</h:link></li>
+				<li><h:link outcome="participe">Participe</h:link></li>
+			</ul>
+		</div>
+		<!-- Fim da div links -->
+	</div>
+	<!-- Fim da div rodape -->
+</h:body>
+</html>

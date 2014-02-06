@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+#home {
+	height: 400px;
+	background-color: #e5e5e5;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+#home span {
+	color: #2C97E8;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#home #servicos {
+	float:left;
+	width: 310px;
+	height: 300px;
+	margin-left: 10px;
+	margin-right: 4px;
+}
+
+#home #servicos #conteiner {
+	width: 310px;
+	height: 265px;
+	border-radius: 5px;
+}
+
+#home #voluntariado {
+	float:left;
+	width: 260px;
+	height: 300px;
+	margin-right: 4px;
+}
+
+#home #voluntariado #conteiner {
+	width: 260px;
+	height: 265px;
+	border-radius: 5px;
+}
+
+#home #noticias {
+	float:left;
+	width: 430px;
+	height: 370px;
+}
+
+#home #noticias #conteiner {
+	width: 430px;
+	height: 370px;
+}
+
+.botao-chamada-servico, .botao-chamada-voluntario {
+	margin: -4px 0 0 0;	
+}
+.botao-chamada-servico:HOVER, .botao-chamada-voluntario:hover {
+	opacity: 0.8;
+}

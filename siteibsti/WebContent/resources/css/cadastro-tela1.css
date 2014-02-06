@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+/*-------Cadastro Tela 1------------*/
+#cadastro_tela1 {
+	width: 1032px;
+	height: 670px;
+	background: #2B78E4;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+#form-cad1-dados {
+	width: 490px;
+	float: left;
+	padding: 20px;
+}
+
+#form-cad1-contato {
+	width: 490px;
+	float: left;
+	padding: 20px;
+}
+
+#form-cad1-endereco {
+	width: 450px;
+	float: right;
+	padding: 20px;
+}
+
+#cadastro_tela1 .botao {
+	width: 130px;
+	height: 35px;
+	float: right;
+	clear: none;
+	display: inline;
+	background: #333;
+	margin-top: 80px;
+	margin-right: 20px;
+	font-size: 15px;
+}

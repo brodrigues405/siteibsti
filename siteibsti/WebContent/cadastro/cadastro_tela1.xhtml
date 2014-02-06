@@ -1,0 +1,150 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<title>Cadastro 01</title>
+		<h:outputStylesheet library="css" name="cadastro-tela1.css"/>
+	</ui:define>
+	
+	<ui:define name="conteudo-dinamico">
+		<div id="cadastro_tela1" class="formulario">
+
+			<h:form id="form-cad1">
+				<div id="form-cad1-dados">
+					<h2>Dados</h2>
+					<h:outputLabel for="nome" value="Nome * " />
+					<h:inputText id="nome" class="grande" required="true"
+						requiredMessage=" O Campo Nome e Obrigatorio" />
+
+					<h:outputLabel for="data_nascimento" class="label2"
+						value="Data de Nascimento * " />
+
+					<h:outputLabel for="profissao" class="label2" value="profissao *" />
+
+					<h:inputText id="data_nascimento" class="input2" required="true"
+						requiredMessage=" O Campo Data de Nascimento e Obrigatorio" />
+
+					<h:inputText id="profissao" class="input2" required="true"
+						requiredMessage=" O Campo Profissao e Obrigatorio" />
+
+					<h:outputLabel for="naturalidade" class="label2"
+						value="Naturalidade" />
+					<h:outputLabel for="sexo" class="label2" value="Sexo" />
+
+					<h:inputText id="naturalidade" class="input2" />
+
+
+					<h:selectOneMenu id="sexo" value="" class="input2">
+						<f:selectItem itemLabel="Masculino" itemValue="1" />
+						<f:selectItem itemLabel="Feminino" itemValue="2" />
+					</h:selectOneMenu>
+
+					<h:outputLabel for="nacionalidade" value="Nacionalidade" />
+					<h:inputText id="nacionalidade" />
+
+				</div>
+				<!-- Fim da Div Dados -->
+
+				<div id="form-cad1-endereco">
+					<h2>Endereco</h2>
+					<h:outputLabel for="cep" value="CEP *" />
+					<h:inputText id="cep" required="true"
+						requiredMessage="O campo CPF e Obrigatorio" />
+
+					<h:outputLabel for="endereco" value="Endereco * " />
+					<h:inputText id="endereco" class="grande" required="true"
+						requiredMessage="O campo Endereco e Obrigatorio" />
+
+					<h:outputLabel for="numero" value="Numero * " />
+					<h:inputText id="numero" required="true"
+						requiredMessage="O campo Numero e Obrigatorio" />
+
+					<h:outputLabel for="complemento" value="Complemento " />
+					<h:inputText id="complemento" class="medio" />
+
+					<h:outputLabel for="bairro" value="Bairro " />
+					<h:inputText id="bairro" class="medio" />
+
+					<h:outputLabel for="cidade" value="Cidade * " />
+					<h:inputText id="cidade" class="medio" required="true"
+						requiredMessage="O campo Cidade e Obrigatorio" />
+
+					<h:outputLabel for="estado" value="Estado *" />
+					<h:selectOneMenu id="estado" class="medio" required="true"
+						requiredMessage="O Campo Estado e Obrigatorio">
+						<f:selectItem itemLabel="Distrito Federal" itemValue="1" />
+						<f:selectItem itemLabel="Minas Gerais" itemValue="2" />
+						<f:selectItem itemLabel="Goias" itemValue="3" />
+						<f:selectItem itemLabel="Sao Paulo" itemValue="4" />
+					</h:selectOneMenu>
+
+					<h:outputLabel for="pais" value="Pais " />
+					<h:inputText id="pais" class="medio" />
+
+
+				</div>
+				<!-- Fim da Div Endereco -->
+
+				<div id="form-cad1-contato">
+					<h2>Contato</h2>
+
+					<h:outputLabel for="telefone1" class="label2" value="Telefone1 *" />
+
+					<h:outputLabel for="operadora1" class="label2" value="Operadora" />
+
+					<h:inputText id="telefone1" class="input2" required="true"
+						requiredMessage=" O Campo Telefone1 e Obrigatorio" />
+
+					<h:selectOneMenu id="operadora1" class="input2" required="true"
+						requiredMessage="O Campo Operadora e Obrigatorio">
+						<f:selectItem itemLabel="Claro" itemValue="1" />
+						<f:selectItem itemLabel="OI" itemValue="2" />
+						<f:selectItem itemLabel="Tim" itemValue="3" />
+						<f:selectItem itemLabel="Vivo" itemValue="4" />
+					</h:selectOneMenu>
+
+					<h:outputLabel for="telefone2" class="label3" value="Telefone2 " />
+
+					<h:outputLabel for="operadora2" class="label3" value="Operadora" />
+
+					<h:outputLabel for="telefone_fixo" class="label3"
+						value="Telefone Fixo" />
+
+					<h:inputText id="telefone2" class="input3" required="true"
+						requiredMessage=" O Campo Telefone2 e Obrigatorio" />
+
+					<h:selectOneMenu id="operadora2" class="input3" value=""
+						required="true" requiredMessage="O Campo Operadora e Obrigatorio">
+						<f:selectItem itemLabel="Claro" itemValue="1" />
+						<f:selectItem itemLabel="OI" itemValue="2" />
+						<f:selectItem itemLabel="Tim" itemValue="3" />
+						<f:selectItem itemLabel="Vivo" itemValue="4" />
+					</h:selectOneMenu>
+
+					<h:inputText id="telefone2_fixo" class="input3" required="true"
+						requiredMessage=" O Campo Telefone Fixo e Obrigatorio" />
+
+					<h:outputLabel for="email" value="Email *" />
+					<h:inputText id="email" class="grande" required="true"
+						requiredMessage=" O Campo Email e Obrigatorio" />
+
+					<h:outputLabel for="site" value="Site " />
+					<h:inputText id="site" class="medio" />
+
+					<h:outputLabel for="facebook" value="Facebook " />
+					<h:inputText id="facebook" class="medio" />
+				</div>
+				<!-- Fim da Div Contato -->
+
+				<h:commandButton value="Proxima Etapa >>" class="botao" />
+				
+				<h:commandButton value="Cancelar" class="botao" />
+
+			</h:form>
+		</div>
+		<!-- Fim da Div Cadastro Tela1 -->
+	</ui:define>
+</ui:composition>

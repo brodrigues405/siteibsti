@@ -1,0 +1,56 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="conteudo-dinamico">
+		<div id="cadastro_tela3" class="formulario">
+
+			<h:form id="form-cad3" enctype="multipart/form-data">
+				<div id="form-cad3-transporte">
+					<h2>Transporte</h2>
+
+					<h:outputLabel for="veiculo"
+						value="Possui veiculo para deslocamento ?" />
+					
+					<h:selectOneRadio id="radio">
+						<f:selectItem itemValue="sim" itemLabel="Sim" />
+						<f:selectItem itemValue="nao" itemLabel="Nao" />
+					</h:selectOneRadio>
+
+					<h:outputLabel for="valor"
+						value="Valor para deslocamento ate Taguatinga (Onibus) ?" />
+					<h:inputText id="valor" />
+				</div>
+				<!-- Fim da Div transporte -->
+
+				<div id="form-cad3-interesses">
+					<h2>Interesses</h2>
+					<span>Descreva um pouco mais sobre os seus interesse na area
+						da TI</span>
+
+					<h:inputTextarea value="" />
+				</div>
+				<!-- Fim da Div Interesses -->
+
+				<div id="form-cad3-curriculo">
+					<h2>Curriculo</h2>
+					<span>Faca o Upload do seu Curriculo em um dos formatos:
+						.doc .docx .pdf</span>
+						
+						<input type="file" id="curriculo" name="curriculo"/>
+				</div>
+				<!-- Fim da Div Curriculo -->
+
+				<h:commandButton value="Proxima Etapa >>" class="botao botaocad" />
+
+				<h:commandButton value="Cancelar" class="botao botaocad" />
+
+				<h:commandButton value="Anterior" class="botao botaocad" />
+
+			</h:form>
+		</div>
+		<!-- Fim da Div Cadastro Tela3 -->
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+/*-------Cadastro Tela 4------------*/
+#cadastro_tela4 {
+	width: 1032px;
+	height: 310px;
+	background: #2B78E4;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#cadastro_tela4 .botao {
+	float: right;
+	background: #333;
+	clear: none;
+	display: inline;
+}
+
+#form-cad4-foto {
+	width: 450px;
+	height: 250px;
+	padding: 20px;
+	float: left;
+}
+
+#form-cad4-foto #foto {
+	width: 180px;
+	height: 150px;
+	margin: 20px;
+	background: #fff;
+}
+
+#form-cad4-login {
+	width: 500px;
+	height: 210px;
+	padding: 20px;
+	float: right;
+}
+
+#form-cad4-login h2 {
+	display: block;
+	margin-bottom: 20px;
+}

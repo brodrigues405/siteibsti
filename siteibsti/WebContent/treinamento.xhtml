@@ -1,0 +1,93 @@
+<ui:composition template="/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="cabecalho">
+		<h:outputStylesheet library="css" name="treinamento.css" />
+		<!-- <h:outputScript library="js" name="treinamento/colapsar-barra.js" /> -->
+	</ui:define>
+
+	<ui:define name="conteudo-dinamico">
+
+		<div class="tol">
+			<span class="balao"></span>
+			<div id="balao">Treinamentos</div>
+		</div>
+
+		<div class="treinamentos">
+
+			<!-- Treinamento de analise -->
+			<a href="#" class="treinamento-ana">
+				<div class="div-analise-ana1">
+					<div class="cobaia seta1">
+						<!-- <h:graphicImage name="treinamento/setabranca.png"
+							library="imagens" /> -->
+					</div>
+				</div>
+			</a>
+
+			<!-- <div class="esconder-ana1"> -->
+				<!-- <div class="titulo-treino titulo-treino-analise">
+					<span class="texto-titulo">Análise</span>
+				</div> -->
+
+				<div>
+					<ul class="conteudo-topicos">
+						<li class="texto-curso">Engenharia de Requisitos</li>
+						<li class="texto-curso">Analise de Negócios</li>
+						
+					</ul>
+				</div>
+		<!-- 	</div> -->
+			<!-- Fim do treinamento de analise -->
+
+			<!-- Treinamento de desenvolvimento -->
+			<a href="#" class="treinamento-exp">
+				<div class="div-treinamento-dev1">
+					<!-- <h:graphicImage name="treinamento/setaverde.png" library="imagens"
+						styleClass="seta" /> -->
+				</div>
+			</a>
+
+			<!-- <div class="esconder-dev1"> -->
+				<!-- <div class="titulo-treino-dev">
+					<span class="texto-titulo">Desenvolvimento</span>
+				</div> -->
+
+				<div >
+					<ul class="conteudo-topicos">
+						<li class="texto-curso">Fundamentos O.O + Java Básico</li>
+						<li class="texto-curso">Java para Web</li>
+						<li class="texto-curso">Web Designer</li>
+						<li class="texto-curso">Photoshop CS6</li>
+					</ul>
+				</div>
+			<!-- </div> -->
+			<!-- Fim do treinamento de desenvolvimento -->
+
+			<!-- Treinamento de validacao -->
+			<a href="#" class="treinamento-val">
+				<div class="div-validacao-val1">
+					<!-- <h:graphicImage name="treinamento/setaazul.png" library="imagens"
+						styleClass="seta2" /> -->
+				</div>
+			</a>
+
+			<!-- <div class="esconder-val1"> -->
+				<!-- <div class="titulo-treino titulo-treino-validacao">
+					<span class="texto-titulo">Validação</span>
+				</div> -->
+
+				<div>
+					<ul class="conteudo-topicos">
+						<li class="texto-curso">Teste de Software</li>
+						
+					</ul>
+				</div>
+			<!-- </div> -->
+			<!-- Fim do treinamento de validacao -->
+		</div>
+	</ui:define>
+</ui:composition>
